@@ -42,51 +42,67 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="https://c4.staticflickr.com/4/3911/14853859167_0a2285f361_h.jpg">
-					<h1 class="light darkshadow">Marc Duiker</h1>
-					<h3 class="light darkshadow">Photography</h3>
-					<p class="light darkbg">
-						<small>Swipe or use the arrow keys to reveal more...</small>
-					</p>
-				</section>
-
 				<section>
-					<section>
-						<h2>Portfolio</h2>
-						<p>
-							<small>Try pressing <a href="#" class="navigate-down">down</a> too see all pictures...</small>
+					<section data-background="https://c4.staticflickr.com/4/3911/14853859167_0a2285f361_h.jpg" data-background-transition="slide">
+						<h1 class="light darkshadow">Marc Duiker</h1>
+						<h3 class="light darkshadow">Photography</h3>
+						<p class="light darkbg">
+							<small>Swipe or use the arrow keys to reveal more...</small>
 						</p>
 					</section>
 					<section>
-						<h2>More images here...</h2>
+						<h2>Contact</h2>
+						<h3>Marc Duiker</h3>
+						<p>
+							<img src="https://pbs.twimg.com/profile_images/519566810660626432/1rBofqQ3.jpeg" alt="This is me" height="200px">
+						</p>
+						<ul>
+							<li><a href="https://twitter.com/marcduiker" title="Twitter">Follow me</a></li>
+							<li><a href="https://www.facebook.com/marcduikerphotography" title="FB page">Like me</a></li>
+							<li><a href="mailto:marc@marcduiker.nl?Subject=Marc Duiker Photography enquiry" title="email">Mail me</a></li>
+							<li><a href="nl.linkedin.com/in/mduiker/" title="LinkedIn">Connect with me</a></li>
+						</ul>
 					</section>
+				</section>
+				<section>
+					<h2>Portfolio</h2>
+					<p>
+						Go <a href="#" class="navigate-right">right</a> to see all pictures... &#10152;
+					</p>
+					<figure>
+						<img src="https://farm4.staticflickr.com/3850/14817809511_1c191275ae_h.jpg" alt="'After opening hours' &copy; by Marc Duiker">
+						<figcaption>'After opening hours'</figcaption>
+					</figure>
+				</section>
+				<section>
+					<figure>
+						<img src="https://farm3.staticflickr.com/2911/14099475724_b508a8a6b8_h.jpg" alt="'After the interrogation' &copy; by Marc Duiker">
+						<figcaption>'After the interrogation'</figcaption>
+					</figure>
+				</section>
+				<section>
+					<figure>
+						<img src="https://farm3.staticflickr.com/2904/13912444910_15a2f396d4_h.jpg" alt="'It was a rough night...' &copy; by Marc Duiker">
+						<figcaption>'It was a rough night...'</figcaption>
+					</figure>
+				</section>
+				<section>
+					<figure>
+						<img src="https://farm4.staticflickr.com/3872/14652466760_fda68bfbf8_h.jpg" alt="'Radiating' &copy; by Marc Duiker" height="700px;">
+						<figcaption>'Radiating'</figcaption>
+					</figure>
+				</section>
+				<section>
+					<figure>
+						<img src="https://farm6.staticflickr.com/5565/14869111025_852767d2dc_h.jpg" alt="'I see a red door...' &copy; by Marc Duiker" height="700px">
+						<figcaption>'I see a red door...'</figcaption>
+					</figure>
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+					<h2>Exhibitions</h2>
 				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
+				<!--
 				<section>
 					<h2>Global State</h2>
 					<p>
@@ -94,26 +110,6 @@
 						will be added as a class to the document element when the slide is open. This lets you
 						apply broader style changes, like switching the background.
 					</p>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
 				</section>
 
 				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
@@ -131,55 +127,13 @@
 				</section>
 
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-								<section>
 					<h2>Intergalactic Interconnections</h2>
 					<p>
 						You can link between slides internally,
 						<a href="#/2/3">like this</a>.
 					</p>
 				</section>
-
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
-
+				-->
 			</div>
 
 		</div>
@@ -188,28 +142,21 @@
 		<script src="js/reveal.min.js"></script>
 
 		<script>
-
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
-				progress: true,
+				progress: false,
 				history: true,
 				center: true,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
-
-				// Optional libraries used to extend on reveal.js
+				height: 900,
+				width: 1200,
+				margin: 0,
+				minScale: 0.33,
+				theme: Reveal.getQueryHash().theme,
+				transition: Reveal.getQueryHash().transition || 'linear',
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
