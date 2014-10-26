@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
  * Marc Duiker theme for reveal.js.
@@ -25,8 +25,36 @@ body {
 
 ::selection {
   color: white;
-  background: #ff5e99;
+  background: #aaa;
   text-shadow: none; }
+
+.reveal .sticky {
+  position: absolute;
+  z-index: 30;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+  padding: 10px 10px 0 10px;
+  background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.reveal .sticky p {
+  opacity: 0.9;
+  color: #eee;
+  font-family: 'Special Elite';
+  font-size: 0.5em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.reveal .sticky p a {
+  color: #eee;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.reveal .sticky p a:hover {
+  color: #222;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+}
 
 /*********************************************
  * HEADERS
@@ -47,12 +75,16 @@ body {
   }
 
 .reveal h1 {
-  font-size: 100px;
+  font-size: 3em;
   margin-top: 3em;
 }
 
+.reveal h6 {
+  font-size: 
+}
+
 .reveal .darkshadow {
-  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
 }
 
 .reveal .light {
@@ -61,17 +93,21 @@ body {
 
 .reveal .darkbg {
   border-radius: 10px;
-  padding: 10px;
-  line-height: 0.9em;
-  background-color: #222;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
   display: inline-block;
+}
+
+.reveal small {
+  font-size: 0.65em;
+  vertical-align: middle;
 }
 
 /*********************************************
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #cc2222;
+  color: #aaa;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -84,10 +120,6 @@ body {
   text-shadow: none;
   border: none; }
 
-.reveal .roll span:after {
-  color: #fff;
-  background: #0d99a5; }
-
 /*********************************************
  * IMAGES
  *********************************************/
@@ -95,7 +127,7 @@ body {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
   border: 5px solid #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
   -ms-transition: all .2s linear;
@@ -112,36 +144,50 @@ body {
  *********************************************/
 .reveal .controls {
   border-radius: 10px;
-  background-color: rgba(200,200,200, 0.6); 
+  background-color: rgba(0, 0, 0, 0.3); 
 }
 
-.reveal .controls div.navigate-left,
+.reveal .controls div.enabled {
+  opacity: 0.9;
+}
+
+.reveal .controls div.navigate-left {
+  border-right-color: #000;
+}
+
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #111; }
+  border-right-color: #eee; }
 
-.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right {
+  border-left-color: #000;
+}
+
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #111; }
+  border-left-color: #eee; }
 
-.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up {
+  border-bottom-color: #000;
+}
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #111; }
+  border-bottom-color: #eee; }
 
-.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down {
+  border-top-color: #000;
+}
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #111; }
+  border-top-color: #eee; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #666; }
+  border-right-color: #999; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #666; }
+  border-left-color: #999; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #666; }
+  border-bottom-color: #999; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #666; }
+  border-top-color: #999; }
 
 /*********************************************
  * PROGRESS BAR
