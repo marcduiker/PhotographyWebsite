@@ -102,6 +102,11 @@ body {
   vertical-align: middle;
 }
 
+.reveal .compactlist {
+  font-size: 0.65em;
+  line-height: 1.3em;
+}
+
 /*********************************************
  * LINKS
  *********************************************/
