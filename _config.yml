@@ -1,0 +1,12 @@
+encoding: bom|utf-8
+encoding: utf-8
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+highlighter: rouge
+markdown: kramdown
+future: true
+paginate: 50
+excerpt_separator: <!--more-->
