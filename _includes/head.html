@@ -3,19 +3,29 @@
   <meta charset="utf-8">
   <title>{{ page.title }} | Marc Duiker</title>
   <meta name="description" content="{{ page.title }}" />
-  <meta name="author" content="Marc Duiker Photography">
+  <meta name="author" content="Marc Duiker">
   <!-- TODO verification code -->
   <meta name="google-site-verification" content="8x6RFwJ53Ryr_sAZQgcInmeiKuuyRDvZcl9SSo3a0BI" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-  <link rel="stylesheet" href="//css/skeleton.min.css">
-
-  <link rel="icon" type="image/png" href="//assets/favicon.ico">
+ 
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+  <!--<![endif]-->
   
-  {% if page.canonical %}
-    <link rel="canonical" href="{{ page.canonical }}">
-  {% endif %}
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="/css/marcduiker.css">
+  <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/png" href="/assets/favicon.ico">
 </head>

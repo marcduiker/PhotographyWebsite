@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+    font-family: 'Work Sans', sans-serif;
+    color: #ddd;
+    background-color: #333;
+}
+
+#main {
+    background: url("/assets/bg/20141108-MarcDuiker-_MG_8493_enfused-AdobeRGB-2400q75.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background-color: black;
+}
+
+#footer {
+    background-color: black;
+}
