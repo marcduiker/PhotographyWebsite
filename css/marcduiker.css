@@ -6,7 +6,7 @@ html, body {
 }
 
 #main {
-    background: url("/assets/bg/20141108-MarcDuiker-_MG_8493_enfused-AdobeRGB-2400q75.jpg");
+    background: url("../bg/MarcDuiker-Urban-bg1.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

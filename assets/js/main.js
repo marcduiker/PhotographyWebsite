@@ -113,7 +113,53 @@
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#headerToggle, #header, #main')
 						.css('transition', 'none');
+		
+		var $main = $('#urban');
+		
+		
+		// Poptrox.
+				
 
+				$main.poptrox({
+					baseZIndex: 20000,
+					caption: function($a) {
+
+						var s = '';
+
+						$a.nextAll().each(function() {
+							s += this.outerHTML;
+						});
+
+						return s;
+
+					},
+					fadeSpeed: 300,
+					onPopupClose: function() { $body.removeClass('modal-active'); },
+					onPopupOpen: function() { $body.addClass('modal-active'); },
+					overlayOpacity: 0.7,
+					popupCloserText: '',
+					popupHeight: 150,
+					popupLoaderText: '',
+					popupSpeed: 300,
+					popupWidth: 150,
+					selector: '.item > a.image',
+					usePopupCaption: false,
+					usePopupCloser: true,
+					usePopupDefaultStyling: false,
+					usePopupForceClose: true,
+					usePopupLoader: true,
+					usePopupNav: true,
+					windowMargin: 50
+				});
+
+				// Hack: Set margins to 0 when 'xsmall' activates.
+					skel
+						.on('-xsmall', function() {
+							$main[0]._poptrox.windowMargin = 50;
+						})
+						.on('+xsmall', function() {
+							$main[0]._poptrox.windowMargin = 0;
+						});
 	});
 
 })(jQuery);
