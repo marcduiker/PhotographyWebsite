@@ -1,7 +1,11 @@
+/* jquery.scrolly v1.0.0-dev | (c) @ajlkn | MIT licensed */
+(function(e){function u(s,o){var u,a,f;if((u=e(s))[t]==0)return n;a=u[i]()[r];switch(o.anchor){case"middle":f=a-(e(window).height()-u.outerHeight())/2;break;default:case r:f=Math.max(a,0)}return typeof o[i]=="function"?f-=o[i]():f-=o[i],f}var t="length",n=null,r="top",i="offset",s="click.scrolly",o=e(window);e.fn.scrolly=function(i){var o,a,f,l,c=e(this);if(this[t]==0)return c;if(this[t]>1){for(o=0;o<this[t];o++)e(this[o]).scrolly(i);return c}l=n,f=c.attr("href");if(f.charAt(0)!="#"||f[t]<2)return c;a=jQuery.extend({anchor:r,easing:"swing",offset:0,parent:e("body,html"),pollOnce:!1,speed:1e3},i),a.pollOnce&&(l=u(f,a)),c.off(s).on(s,function(e){var t=l!==n?l:u(f,a);t!==n&&(e.preventDefault(),a.parent.stop().animate({scrollTop:t},a.speed,a.easing))})}})(jQuery);
+
+/* jquery.scrollzer v0.2 | (c) @ajlkn | MIT licensed */
+jQuery.scrollzer=function(e,t){var r=jQuery(window),a=jQuery(document);r.on('load',function(){var i,o,s,l,n,c,u=jQuery.extend({activeClassName:"active",suffix:"-link",pad:50,firstHack:!1,lastHack:!1},t),d=[],f=jQuery();for(i in e)s=jQuery("#"+e[i]),l=jQuery("#"+e[i]+u.suffix),s.length<1||l.length<1||(o={},o.link=l,o.object=s,d[e[i]]=o,f=f.add(l));var v,h=function(){var e;for(i in d)e=d[i],e.start=Math.ceil(e.object.offset().top)-u.pad,e.end=e.start+Math.ceil(e.object.innerHeight());r.trigger("scroll")};r.resize(function(){window.clearTimeout(v),v=window.setTimeout(h,250)});var j,m=function(){f.removeClass("scrollzer-locked")};r.scroll(function(e){var t=0,o=!1;n=r.scrollTop(),window.clearTimeout(j),j=window.setTimeout(m,250);for(i in d)i!=c&&n>=d[i].start&&n<=d[i].end&&(c=i,o=!0),t++;u.lastHack&&n+r.height()>=a.height()&&(c=i,o=!0),o&&!f.hasClass("scrollzer-locked")&&(f.removeClass(u.activeClassName),d[c].link.addClass(u.activeClassName))}),r.trigger("resize")})};
+
 /*
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Main.js
 */
 
 (function($) {
